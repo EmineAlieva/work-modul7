@@ -4,51 +4,120 @@
   color: #fff;
 }
 body {
-  background-color: #909090;
+  box-sizing: border-box;
+  height: 4600px;
+  margin: 4rem 4rem 4rem 5rem;
+  background: url('../image/BG_1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #0B1D26;
 }
-/* font-weight: 600; */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* font-family: Poppins; */
   font-weight: 700;
-  /* color: #fff; */
   height: 17px;
 }
 header a {
   text-decoration: none;
-  /* color: #fff; */
 }
 header :nth-child(2) {
   display: flex;
-  gap: 20px;
+  gap: 1.5rem;
 }
 header :nth-child(3) {
   display: flex;
 }
 hr {
   display: inline-block;
-  width: 3rem;
+  width: 3.8rem;
+  margin-left: 0.15rem;
+  color: #FBD784;
+}
+.title {
+  margin: 10rem 22.5rem 39.7rem 22.5rem;
+}
+h1 {
+  font-family: Playfair Display;
+  font-size: 88px;
+  font-weight: 600;
+  margin: 0.8rem 0 0 0.4rem;
+  line-height: 100px;
+}
+h1+div {
+  margin: 0.8rem 0 0 0.3rem;
+  font-weight: 700;
+}
+h1+div>p {
+  display: inline-block;
+}
+.title p+img {
+  margin-left: 0.2rem;
 }
 
+main>div {
+  margin: 0 8rem 0 8rem;
+}
+section {
+  padding-left: 8rem;
+}
+.text {
+  margin: 9.5rem 0 0 -0.5rem;
+}
 .paragraph {
+  position: absolute;
+  left: 0;
+  top: -20px;
   font-weight: 700;
   font-size: 240px;
   width: 240px;
   height: 240px;
   opacity: 10%;
 }
-.mark {
+.mark1,.mark2 {
+  display:inline-block;
+  color: #FBD784;
+  font-weight: 800;
+  letter-spacing: 6px;
+}
+.mark1 {
+  padding-left: 2rem;
+}
+.mark2 {
+  padding-left: 1.4rem;
+}
+.mark3 {
+
+}
+.follow p {
+  display: inline-block;
+  margin-top: 1.6rem;
   color: #FBD784;
 }
-main>div>div {
+
+main>div>section {
   display: flex;
+  position: relative;
+  margin-bottom: 11rem;
 }
 main>div>:nth-child(2) {
   flex-direction: row-reverse;
 }
-
+main div :first-child h2 {
+  font-family: Playfair Display;
+  font-weight: 600;
+  font-size: 64px;
+}
+h2 {
+  margin: 0.5rem 18rem 0 0;
+}
+h2+p {
+  margin: 1.5rem 7rem 0 0;
+  font-weight: 700;
+  line-height: 32px;
+}
 
 footer>div {
   display: flex;
