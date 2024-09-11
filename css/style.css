@@ -60,11 +60,10 @@ h1+div>p {
 main>div {
   margin: 0 8rem 0 8rem;
 }
-section {
-  padding-left: 8rem;
-}
 .text {
   margin: 9.5rem 0 0 -0.5rem;
+  width: 632px;
+  padding-left: 8rem;
 }
 .paragraph {
   position: absolute;
@@ -88,51 +87,66 @@ section {
 .mark2 {
   padding-left: 1.4rem;
 }
-.mark3 {
-
-}
 .follow p {
   display: inline-block;
-  margin-top: 1.6rem;
+  margin-top: 0.5rem;
   color: #FBD784;
 }
 
-main>div>section {
+section {
   display: flex;
-  position: relative;
+  justify-content: space-between;
   margin-bottom: 11rem;
+  height: 720px;
+}
+.section_content {
+  position: relative;
 }
 main>div>:nth-child(2) {
   flex-direction: row-reverse;
 }
-main div :first-child h2 {
-  font-family: Playfair Display;
+
+h2 {
   font-weight: 600;
   font-size: 64px;
+  line-height: 96px;
+  margin: 0.5rem 0 1.5rem 0;
+  width: 540px;
 }
-h2 {
-  margin: 0.5rem 18rem 0 0;
+main>div>:nth-child(3) h2 {
+  width: 555px;
 }
-h2+p {
-  margin: 1.5rem 7rem 0 0;
+.desc {
   font-weight: 700;
   line-height: 32px;
 }
 
+footer {
+  margin: 0 8rem 0 8rem;
+}
 footer>div {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 200px;
+  align-content: flex-start;
 }
 footer>div :first-child {
-  margin-top: -0.3rem;
+  margin-top: 0.2rem;
+}
+footer img+p {
+  display: block;
+  width: 350px;
+  line-height: 32px;
+}
+footer ul {
+  margin-top: 0;
 }
 footer li {
   list-style: none;
-  margin-bottom: 1rem;
-  margin-left: -2.1rem;
+  margin: 0 0 1.2rem -2.1rem;
 }
-footer div>div>p, footer ul :last-child {
+footer ul :last-child {
   margin-bottom: 4rem;
 }
 footer h3 {
@@ -145,8 +159,5 @@ footer h3 {
   font-weight: 400;
   opacity: 50%;
   margin-top: -3rem;
-}
-footer {
-  margin-top: 20rem;
 }
 
